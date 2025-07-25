@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #222;
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.checkout-form {
+  flex: 2;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.summary {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+.payment-option .options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.payment-option .options label {
+  flex: 1;
+  min-width: 120px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.payment-option .options label input {
+  display: block;
+  margin: 10px auto 5px;
+ 
+}
+
+.payment-option .options i {
+  font-size: 20px;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+  
+}
+
+.payment-option .options label:has(input:checked) {
+  border: 2px solid #ff6600;
+}
+
+.summary h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.summary .item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.summary .item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.summary .item p {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.summary .item span {
+  font-size: 13px;
+  color: #0077cc;
+}
+
+.summary .totals {
+  font-size: 14px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.summary .totals p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summary .total {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.order-btn {
+  width: 100%;
+  background: #ff6600;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.order-btn i {
+  margin-left: 8px;
+}

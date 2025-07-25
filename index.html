@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <form class="checkout-form">
+      <!-- Billing Information -->
+      <section class="billing-info">
+        <h2>Billing Information</h2>
+        <div class="row">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+          <input type="text" placeholder="Company Name (Optional)">
+        </div>
+        <input type="text" placeholder="Address">
+        <div class="row">
+          <select><option>Select...</option></select>
+          <select><option>Select...</option></select>
+          <select><option>Select...</option></select>
+          <input type="text" placeholder="Zip Code">
+        </div>
+        <div class="row">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Phone Number">
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="ship-diff">
+          <label for="ship-diff">Ship into different address</label>
+        </div>
+      </section>
+
+  
+      <section class="payment-option">
+        <h2>Payment Option</h2>
+        <div class="options">
+          <label><i class="fas fa-dollar-sign"></i><span>Cash on Delivery</span><input type="radio" name="pay"></label>
+          <label><i class="fab fa-vimeo-v"></i><span>Venmo</span><input type="radio" name="pay"></label>
+          <label><i class="fab fa-paypal"></i><span>Paypal</span></label>
+          <label><i class="fab fa-amazon"></i><span>Amazon Pay</span></label>
+          <label><i class="fas fa-credit-card"></i><span>Debit/Credit Card</span><input type="radio" name="pay" checked></label>
+        </div>
+        <input type="text" placeholder="Name on Card">
+        <input type="text" placeholder="Card Number">
+        <div class="row">
+          <input type="text" placeholder="DD/YY">
+          <input type="text" placeholder="CVC">
+        </div>
+      </section>
+
+     
+      <section class="additional-info">
+        <h2>Additional Information</h2>
+        <textarea placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+      </section>
+    </form>
+
+   
+    <aside class="summary">
+      <h3>Order Summary</h3>
+      <div class="item">
+        <img src="./images/i1.png" alt="">
+        <div>
+          <p>Canon EOS 1500D DSLR Camera Body+ 18-...</p>
+          <span>1 x <strong>$70</strong></span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/i2.png" alt="">
+        <div>
+          <p>Wired Over-Ear Gaming Headphones with U...</p>
+          <span>3 x <strong>$250</strong></span>
+        </div>
+      </div>
+      <div class="totals">
+        <p>Sub-total <span>$320</span></p>
+        <p>Shipping <span>Free</span></p>
+        <p>Discount <span>$24</span></p>
+        <p>Tax <span>$61.99</span></p>
+        <p class="total">Total <span>$357.99 USD</span></p>
+      </div>
+      <button class="order-btn">PLACE ORDER <i class="fas fa-arrow-right"></i></button>
+    </aside>
+  </div>
+</body>
+</html>
